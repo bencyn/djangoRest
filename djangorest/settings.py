@@ -122,14 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
-# Configure Django App for Heroku.
-import django_heroku
-
-django_heroku.settings(locals())
-=======
 
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
->>>>>>> a114f4e1d64dc8f1122516875e67ba18a1773a04

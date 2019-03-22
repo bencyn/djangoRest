@@ -1,16 +1,16 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import MembersSerializer
-from .models import Members
+from .serializers import TeamsSerializer
+from .models import Teams
 
 # Create your views here.
 
-class MembersViewSet(viewsets.ModelViewSet):
+class TeamViewSet(viewsets.ModelViewSet):
     """API endpoint that allows members to be viewed or edited.
     """
 
-    queryset = Members.objects.all()
-    serializer_class=MembersSerializer
+    queryset = Teams.objects.all()
+    serializer_class=TeamsSerializer
 
     def perform_create(self,serializer):
         """Save the post data when creating a new member."""

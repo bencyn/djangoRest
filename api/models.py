@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Members(models.Model):
+class Teams(models.Model):
     """Thi class represents the members model."""
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=200)
